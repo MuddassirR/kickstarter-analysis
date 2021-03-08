@@ -6,7 +6,7 @@ Data analysis was performed on thousands of crowdfunding projects on Kickstarter
 ### Purpose
 The purpose of the analysis was to uncover trends among Kickstarter campaigns to help fundraisers make better decisisons as to what category to campaign in and when.
 
-##Analysis and Challenges
+## Analysis and Challenges
 The percentage pledged of the goal amount was calculated using the round function and inserted into column O. Average donation per person was calculated by taking the total amount pledged per campaign and dividing it by the total number of donors for that campaign. Some campaigns had 0 donors and thus, were categorized as failed outcomes. However, I had to include the IFERROR function as if I divided the total amount pledged by 0 donors, the cell would enter an error. If error, enter 0. Some campaigns had money pledged with 0 donors because they were self-funded. Using the text-to-column feature, I seperated the categories by their parent category and subcategory and placed them in columnns Q and R. Since the deadline and launched date were in Epoch Unix timestamps, I changed it to a more readable format in columns S and T using the DATE function. Column U had the year the campaign was created in using the YEAR function. I also created a PivotTable and placed it into another sheet on the refined dataset. 
 
 ### Analysis of Outcomes Based on Launch Date
